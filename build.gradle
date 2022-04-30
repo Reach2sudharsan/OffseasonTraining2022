@@ -68,7 +68,10 @@ dependencies {
     simulationRelease wpi.sim.enableRelease()
 
     testImplementation 'junit:junit:4.12'
+    testImplementation "org.mockito:mockito-core:3.+"
 }
+
+repositories { mavenCentral() }
 
 // Simulation configuration (e.g. environment variables).
 wpi.sim.addGui().defaultEnabled = true
